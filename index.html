@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --grey-700: hsl(0, 0%, 20%);
+        --grey-800: hsl(0, 0%, 12%);
+        --grey-900: hsl(0, 0%, 8%);
+        --sand: hsl(47deg 69% 73%);
+      }
+
+      body {
+        background: var(--grey-900);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Inter";
+      }
+
+      .card {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        text-align: center;
+        background: var(--grey-800);
+        width: 20rem;
+        color: var(--white);
+        padding: 2rem;
+        margin-bottom: 5rem;
+        border-radius: 1rem;
+      }
+
+      .card__image_container {
+        height: 6rem;
+        width: 6rem;
+        overflow: hidden;
+        border-radius: 50%;
+        align-self: center;
+        margin-bottom: 1.25rem;
+      }
+
+      .card img {
+        object-fit: cover; /* Prevents stretching */
+        width: 110%;
+        height: 100%;
+        object-position: 100%;
+        transform: translateX(-10px); /* Move left */
+        transform:;
+      }
+
+      @media (width >= 48rem) {
+        .card {
+          /* padding: 2rem; */
+          width: 24rem;
+        }
+      }
+
+      .card__name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .card__location {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--sand);
+        margin-bottom: 1.25rem;
+      }
+
+      .card__description {
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-bottom: 1.25rem;
+      }
+
+      .card__links {
+        font-size: 0.875rem;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+      }
+
+      .card__links a {
+        width: 100%;
+        padding: 1rem 1rem;
+        align-self: center;
+        color: inherit;
+        text-decoration: none;
+        font-weight: 600;
+        background: var(--grey-700);
+        display: inline-block;
+        border-radius: 0.5rem;
+      }
+
+      .card__links a:hover {
+        background: hsl(47deg 76% 83%);
+        color: var(--grey-900);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--white);
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__image_container">
+        <img src="./assets/images/nick-headshot.JPG" alt="" />
+      </div>
+      <h1 class="card__name">Nick Chong</h1>
+      <h2 class="card__location">Sydney, Australia</h2>
+      <p class="card__description">"QUIT MY JOB TO RAW-DOG CSS"</p>
+
+      <div class="card__links">
+        <a href="github.com/nicch0">GitHub</a>
+        <a href="https://www.frontendmentor.io/profile/nicch0"
+          >Frontend Mentor</a
+        >
+        <a href="https://www.linkedin.com/in/n-chong/">LinkedIn</a>
+        <a href="https://x.com/nicch0">Twitter</a>
+        <a href="https://www.instagram.com/nchong__/">Instagram</a>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://niccho.dev/">Nick Chong</a>.
+    </div>
+  </body>
+</html>
